@@ -58,7 +58,7 @@ pip install -r requirements.txt
 Example `.env` file:
 
 ```env
-BOT_TOKEN=your_bot_token_here
+TELEGRAM_BOT_TOKEN=your_bot_token_here
 DATABASE_URL=postgres://username:password@localhost:5432/your_database
 ```
 
