@@ -1,6 +1,6 @@
 from aiogram import filters
 from aiogram import types
-from laoder import bot, dp
+from loader import bot, dp
 
 
 @dp.message(filters.CommandStart())
