@@ -1,4 +1,4 @@
-Here's the updated **README.md** without the example code:
+**README.md**
 
 ```markdown
 # Aiogram 3 Template
