@@ -1,1 +1,1 @@
-..
+from .register import Register
