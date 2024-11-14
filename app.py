@@ -6,7 +6,7 @@ from loader import bot, dp
 from tortoise import Tortoise
 from configs import BotSettings
 
-from middlewares import Register
+from middlewares import Register, Throttle
 
 class Controller:
     async def __aenter__(self):
@@ -24,6 +24,7 @@ class Controller:
 
 async def main():
     try:
+        dp.update.middleware.register(Throttle())
         dp.update.middleware.register(Register())
         async with Controller() as controller:
             pass
