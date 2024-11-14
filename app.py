@@ -14,6 +14,7 @@ class Controller:
             db_url=BotSettings.DATABASE_URL.get_secret_value(),
             modules={"models": ["database.models"]},
         )
+        await Tortoise.generate_schemas()
         await dp.start_polling(bot)
         return self
 
