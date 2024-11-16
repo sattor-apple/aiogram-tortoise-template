@@ -3,8 +3,8 @@ from tortoise.models import Model
 
 
 class User(Model):
-    id = fields.IntField(pk=True)
-    user_id = fields.IntField(unique=True)
+    id = fields.BigIntField(pk=True)
+    user_id = fields.BigIntField(unique=True)
     chat_type = fields.CharField(max_length=20, default='private')
     language = fields.CharField(max_length=30, null=True)
     user_type = fields.CharField(max_length=30, default='user')
