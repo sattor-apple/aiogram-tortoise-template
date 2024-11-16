@@ -4,7 +4,7 @@ from database.models import User
 from typing import Callable, Awaitable, Dict, Any
 
 
-class CounterMiddleware(BaseMiddleware):
+class Register(BaseMiddleware):
     async def __call__(
         self,
         handler: Callable[[Update, Dict[str, Any]], Awaitable[Any]],
