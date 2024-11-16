@@ -3,7 +3,7 @@ from aiogram.types import Update
 from aiogram.dispatcher.middlewares.base import BaseMiddleware
 from typing import Callable, Awaitable, Dict, Any
 
-class ThrottleMiddleware(BaseMiddleware):
+class Throttle(BaseMiddleware):
     def __init__(self, rate_limit: float = 0.5) -> None:
         self.rate_limit = rate_limit
         self.user_last_message_time = {}
